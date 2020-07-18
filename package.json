@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/infinitedevsign/css-button-hover-effects/issues"
   },
-  "homepage": "https://github.com/infinitedevsign/css-button-hover-effects#readme"
+  "homepage": "https://github.com/infinitedevsign/css-button-hover-effects#readme",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
 }
