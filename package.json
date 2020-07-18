@@ -1,0 +1,26 @@
+{
+  "name": "css-button-hover-effects",
+  "version": "0.1.0",
+  "description": "css button hover effects",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch css/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinitedevsign/css-button-hover-effects.git"
+  },
+  "keywords": [
+    "css",
+    "button",
+    "hover",
+    "effects"
+  ],
+  "author": "Arifin Izzah M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infinitedevsign/css-button-hover-effects/issues"
+  },
+  "homepage": "https://github.com/infinitedevsign/css-button-hover-effects#readme"
+}
