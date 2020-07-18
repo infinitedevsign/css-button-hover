@@ -1,5 +1,12 @@
+/*
+CSS Button Hover Effects is a button hover effects that you can use to your project.
+Feel free if you want to contribute to adding more button effects, or want to add this style to other languages.
+
+Author: Arifin Izzah (https://github.com/arifinizzah)
+*/
 body {
   background-color: #f8f3ff;
+  padding: 0 20vw;
   color: #2D0367;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
@@ -14,11 +21,12 @@ body > h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 15vh 0;
 }
 
 button {
   margin: 20px;
-  padding: 15px;
+  padding: 10px 20px;
   background: #f8f3ff;
   color: #2D0367;
   font-family: "Quicksand", sans-serif;
@@ -26,19 +34,42 @@ button {
   border: 2px solid #2D0367;
   transition: 0.25s;
 }
+button:hover, button:focus {
+  outline: none;
+}
 
-.btn-1:hover, .btn-1:focus {
+.fill-up:hover, .fill-up:focus {
   color: #f8f3ff;
   box-shadow: inset 0 -3em 0 0 #2D0367;
 }
 
-.btn-2 {
+.fill-in:hover, .fill-in:focus {
+  box-shadow: inset 0 0 0 2em #00B0B8;
+  border-color: #00B0B8;
+  color: #f8f3ff;
+}
+
+.neumorphism {
   border: 0;
   border-radius: 5px;
 }
-.btn-2:hover, .btn-2:focus {
+.neumorphism:hover, .neumorphism:focus {
+  color: #00B0B8;
   transform: translate(0, -5px);
   box-shadow: -5px -5px 15px #FFFFFF, 5px 5px 15px #ede0ff;
+}
+
+.raise:hover, .raise:focus {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em #00B0B8;
+  border-color: #00B0B8;
+  color: #00B0B8;
+}
+
+.slide:hover, .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 #00B0B8;
+  border-color: #00B0B8;
+  color: #f8f3ff;
 }
 
 /*# sourceMappingURL=style.css.map */
