@@ -6,13 +6,14 @@ Author: Arifin Izzah (https://github.com/arifinizzah)
 */
 body {
   background-color: #f8f3ff;
-  padding: 0 20vw;
+  margin: 0 10px;
   color: #2D0367;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
-  text-align: center;
 }
 body > h1 {
+  margin-top: 10vh;
+  text-align: center;
   font-weight: normal;
   font-size: 2.5em;
 }
@@ -21,11 +22,19 @@ body > h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 15vh 0;
+  padding: 3vh 0;
 }
 
+@media (min-width: 991.98px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3vh 20vw;
+  }
+}
 button {
-  margin: 20px;
+  margin: 10px;
   padding: 10px 20px;
   background: #f8f3ff;
   color: #2D0367;
@@ -70,6 +79,11 @@ button:hover, button:focus {
   box-shadow: inset 6.5em 0 0 0 #00B0B8;
   border-color: #00B0B8;
   color: #f8f3ff;
+}
+
+footer {
+  margin-top: 10vh;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
