@@ -1,4 +1,4 @@
-# css-button-hover
+# CSS button hover effects
 effects while hovering a button
 
-### note, still under development
+###still under development
