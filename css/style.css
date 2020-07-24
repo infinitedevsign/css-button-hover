@@ -5,34 +5,40 @@ Feel free if you want to contribute to adding more button effects, or want to ad
 Author: Arifin Izzah (https://github.com/arifinizzah)
 */
 body {
-  background-color: #f8f3ff;
-  margin: 0 10px;
+  background-color: #F0E6FF;
+  margin: 0;
   color: #2D0367;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
 }
-body > h1 {
+
+.container {
+  background-color: #f8f3ff;
+  height: 100%;
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+h1 {
   margin-top: 10vh;
+  padding: 0 10px;
   text-align: center;
   font-weight: normal;
   font-size: 2.5em;
 }
 
-.flex-container {
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3vh 0;
+  padding: 3vh 5vh;
 }
 
-@media (min-width: 991.98px) {
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 3vh 20vw;
-  }
-}
 button {
   margin: 10px;
   padding: 10px 20px;
@@ -81,9 +87,28 @@ button:hover, button:focus {
   color: #f8f3ff;
 }
 
+.code-section {
+  padding: 3vh 5vh 0 5vh;
+}
+
+.code-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.syntax-highlighter {
+  margin-top: 0;
+}
+
+code {
+  background-color: #F0E6FF;
+  border-radius: 5px;
+}
+
 footer {
-  margin-top: 10vh;
+  margin-top: 5vh;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
