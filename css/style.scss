@@ -6,11 +6,12 @@ Author: Arifin Izzah (https://github.com/arifinizzah)
 */
 
 $idwhite: #f8f3ff;
+$idsatine: #F0E6FF;
 $idpurple: #2D0367;
 $idgreen: #00B0B8;
 
 body{
-  background-color: $idwhite;
+  background-color: $idsatine;
   margin: 0;
   color: $idpurple;
   font-family: 'Quicksand', sans-serif;
@@ -18,15 +19,16 @@ body{
   display: flex;
   justify-content: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 .container{
-  //background-color: #FFFFFF;
-  height: 100vh;
+  background-color: $idwhite;
+  height: 100%;
   width: 100vw;
   max-width: 768px;
   margin: 0 auto;
-  position: fixed;
+  //position: fixed;
 }
 
 h1{
@@ -41,7 +43,7 @@ h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3vh 0;
+  padding: 3vh 5vh;
 }
 
 button{
@@ -108,9 +110,26 @@ button{
   }
 }
 
+.code-section{
+  padding: 3vh 5vh 0 5vh;
+}
 
+.code-title{
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.syntax-highlighter{
+  margin-top: 0;
+}
+
+code{
+  background-color: $idsatine;
+  border-radius: 5px;
+}
 
 footer{
-  margin-top: 10vh;
+  margin-top: 5vh;
   text-align: center;
+  padding-bottom: 20px;
 }
