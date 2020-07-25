@@ -119,17 +119,55 @@ button{
   margin-bottom: 0;
 }
 
-.syntax-highlighter{
-  margin-top: 0;
+pre[class*="language-"]{
+  position: relative;
+  overflow: visible;
+  border-radius: 5px;
+  &:hover .copy{
+    transform: translate(0px, -100%);
+    padding-bottom: 5px;
+  }
+  .copy{
+    content: "copy";
+    padding: 2px 10px 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0px, -100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #C49CFC;
+    background: #F0F0F0;
+    cursor: pointer;
+    transition: all 200ms ease;
+    &:hover{
+      color: $idpurple;
+    }
+  }
 }
 
-code{
-  background-color: $idsatine;
-  border-radius: 5px;
+code {
+  max-height: 250px;
+  border-radius: 10px;
+  overflow: scroll;
+  &.hljs{
+    &::-webkit-scrollbar{
+      background-color: #F0F0F0;
+      width: 15px;
+    }
+    &::-webkit-scrollbar-track{
+      background-color: #F0F0F0;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: #C49CFC;
+      border-radius: 15px;
+      border: 5px solid #F0F0F0;
+    }
+  }
 }
 
 footer{
   margin-top: 5vh;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 0 5vw 20px 5vw;
 }
