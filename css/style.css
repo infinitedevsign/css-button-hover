@@ -96,19 +96,55 @@ button:hover, button:focus {
   margin-bottom: 0;
 }
 
-.syntax-highlighter {
-  margin-top: 0;
+pre[class*=language-] {
+  position: relative;
+  overflow: visible;
+  border-radius: 5px;
+}
+pre[class*=language-]:hover .copy {
+  transform: translate(0px, -100%);
+  padding-bottom: 5px;
+}
+pre[class*=language-] .copy {
+  content: "copy";
+  padding: 2px 10px 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0px, -100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #C49CFC;
+  background: #F0F0F0;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+pre[class*=language-] .copy:hover {
+  color: #2D0367;
 }
 
 code {
-  background-color: #F0E6FF;
-  border-radius: 5px;
+  max-height: 250px;
+  border-radius: 10px;
+  overflow: scroll;
+}
+code.hljs::-webkit-scrollbar {
+  background-color: #F0F0F0;
+  width: 15px;
+}
+code.hljs::-webkit-scrollbar-track {
+  background-color: #F0F0F0;
+}
+code.hljs::-webkit-scrollbar-thumb {
+  background-color: #C49CFC;
+  border-radius: 15px;
+  border: 5px solid #F0F0F0;
 }
 
 footer {
   margin-top: 5vh;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 0 5vw 20px 5vw;
 }
 
 /*# sourceMappingURL=style.css.map */
