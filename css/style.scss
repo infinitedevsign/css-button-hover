@@ -123,9 +123,11 @@ pre[class*="language-"]{
   position: relative;
   overflow: visible;
   border-radius: 5px;
+  margin-bottom: 25px;
   &:hover .copy{
     transform: translate(0px, -100%);
     padding-bottom: 5px;
+    color: #C49CFC;
   }
   .copy{
     content: "copy";
@@ -136,7 +138,7 @@ pre[class*="language-"]{
     transform: translate(0px, -100%);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    color: #C49CFC;
+    color: #FFFFFF;
     background: #F0F0F0;
     cursor: pointer;
     transition: all 200ms ease;
@@ -148,7 +150,7 @@ pre[class*="language-"]{
 
 code {
   max-height: 250px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: scroll;
   &.hljs{
     &::-webkit-scrollbar{
@@ -167,7 +169,7 @@ code {
 }
 
 footer{
-  margin-top: 5vh;
+  margin-top: 10vh;
   text-align: center;
   padding: 0 5vw 20px 5vw;
 }

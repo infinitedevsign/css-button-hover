@@ -100,10 +100,12 @@ pre[class*=language-] {
   position: relative;
   overflow: visible;
   border-radius: 5px;
+  margin-bottom: 25px;
 }
 pre[class*=language-]:hover .copy {
   transform: translate(0px, -100%);
   padding-bottom: 5px;
+  color: #C49CFC;
 }
 pre[class*=language-] .copy {
   content: "copy";
@@ -114,7 +116,7 @@ pre[class*=language-] .copy {
   transform: translate(0px, -100%);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: #C49CFC;
+  color: #FFFFFF;
   background: #F0F0F0;
   cursor: pointer;
   transition: all 200ms ease;
@@ -125,7 +127,7 @@ pre[class*=language-] .copy:hover {
 
 code {
   max-height: 250px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: scroll;
 }
 code.hljs::-webkit-scrollbar {
@@ -142,7 +144,7 @@ code.hljs::-webkit-scrollbar-thumb {
 }
 
 footer {
-  margin-top: 5vh;
+  margin-top: 10vh;
   text-align: center;
   padding: 0 5vw 20px 5vw;
 }
